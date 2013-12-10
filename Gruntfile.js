@@ -19,18 +19,24 @@ module.exports = function (grunt) {
       }
     },
 
-    compass : {
-
-      dist : {
-        options : {
-          sassDir : 'dev',
-          cssDir : 'dist',
-          imagesDir : 'img',
-          relativeAssets: true,
-          environment: 'production'
+    less : {
+      development: {
+        options: {
+          paths: ["dist"]
+        },
+        files: {
+          "dist/prettyCheckable.min.css": "dev/prettyCheckable.less"
+        }
+      },
+      production: {
+        options: {
+          paths: ["dist"],
+          cleancss: true
+        },
+        files: {
+          "dist/prettyCheckable.min.css": "dev/prettyCheckable.less"
         }
       }
-
     },
 
     watch : {
@@ -48,7 +54,7 @@ module.exports = function (grunt) {
 
   // Main tasks
   grunt.loadNpmTasks('grunt-contrib-uglify');
-  grunt.loadNpmTasks('grunt-contrib-compass');
+  grunt.loadNpmTasks('grunt-contrib-less');
   grunt.loadNpmTasks('grunt-contrib-watch');
 
   grunt.registerTask('default', [
