@@ -5,8 +5,7 @@ This plugin replaces the default checkboxes and radio inputs for better looking 
 ##Features:
 
 * Compatible with IE7+, Chrome, Firefox, Safari and mobile browsers;
-* Custom design, kindly provided by [Bruno O. Barros](http://ilustrebob.com.br/);
-* Four color options (Twitter bootstrap) + [editable PSD](http://arthurgouveia.com/prettyCheckable/goodies/prettyCheckable.psd);
+* Style fully customizable using only CSS3;
 * Better look & size;
 * Super easy implementation;
 * Selectable with Tab and checkable with keyboard;
@@ -15,7 +14,7 @@ This plugin replaces the default checkboxes and radio inputs for better looking 
 
 ##Install & Setup
 
-[Download the files](https://github.com/arthurgouveia/prettyCheckable/zipball/master) (or [fork it](https://github.com/arthurgouveia/prettyCheckable)) and include jQuery 1.9+ and prettyCheckable files (make sure you're mapping the sprite correctly on your CSS):
+[Download the files](https://github.com/arthurgouveia/prettyCheckable/zipball/master) (or [fork it](https://github.com/arthurgouveia/prettyCheckable)) and include jQuery 1.9+ and prettyCheckable files:
 
     <link rel="stylesheet" href="js/prettyCheckable/prettyCheckable.css">
 
@@ -52,22 +51,6 @@ If you want to apply something to all the inputs but you need a few specific one
 
 ###Customizing
 
-####CSS only (AKA lame option)
-
-You can simply use the images inside /img/sprite and create your own sprite manually. Make sure you update your sprite name, match it to the url inside your CSS and also the states positions for each one of the types and states the checkables can assume.
-
-####Grunt & Compass (Fuck Yeah Method)
-
-Sprites are being automagically generated with the help of Compass. 
-The sizes of all the checkables are assumed to be the same, so that's calculated from your first image size.
-The positioning of each sprite is also mapped automatically.
-
-- Clone this repo;
-- Install Sass &amp; Compass;
-- Run 'npm install';
-- Run 'grunt' to build it or 'grunt w' to watch for changes.
-
-ps.: If you're wondering why I set a capital letter in front of each file, that's done because I want Compass to generate the sprite it in a logical order. Found a better way? Pull Request!
 
 ###Options
 
