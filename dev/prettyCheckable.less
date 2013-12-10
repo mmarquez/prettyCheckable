@@ -1,0 +1,38 @@
+.prettycheckbox,.prettyradio {
+    display:inline-block;
+    padding:0;
+    margin:0;
+    width: 100%;
+
+    label{
+        display:block;
+        float:left;
+        margin:6px 5px;
+        cursor:pointer;
+    }
+
+    &.labelleft label {
+        width: ~"calc(100% - 1.6em)";
+    }
+
+    a.disabled,label.disabled{
+        cursor:not-allowed;
+    }
+
+    &>a:focus{
+        outline:0 none;
+    }
+
+    &>a{
+        height: 1.5em;
+        width: 1.5em;
+        display: inline-block;
+        float: left;
+        cursor: pointer;
+        margin: 0;
+        background-color: #D8DCE0;
+        font-size: 1.4em;
+        padding: .1em .2em;
+        border-radius: 5px;
+    }
+}
